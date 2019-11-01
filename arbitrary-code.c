@@ -27,12 +27,13 @@ void stack_overflow() {
 
     *ptr = &malicious + 4;
 
-    printf("%p\n", &malicious);
+    printf("malicious: %p\n", &malicious + 4);
 
     print_array(tmp, 3);
 }
 
 int main() {
+    printf("exit: %p\n", &&exit);
     stack_overflow();
 
 exit: return 0;
