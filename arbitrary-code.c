@@ -1,3 +1,5 @@
+// compile with -fno-stack-protector
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
